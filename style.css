@@ -584,58 +584,122 @@ footer {
 
     border-radius: 10px;
 }
+.reading-series-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 750px;
+}
 @media (max-width: 768px) {
 
+    /* =========================
+       HEADER + MOBILE NAVIGATION
+    ========================= */
+
     header {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 14px 5%;
+    }
+
+    .logo-image {
+        width: 160px;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
         margin-top: 15px;
+        padding: 12px 0;
+        background-color: white;
+        border-top: 1px solid #eadffd;
+    }
+
+    nav.nav-open {
+        display: flex;
     }
 
     nav a {
-        margin: 8px;
+        width: 100%;
+        text-align: center;
+        padding: 13px 0;
+        margin: 0;
+        font-size: 16px;
     }
 
-   .hero {
-    grid-template-columns: 1fr;
-    padding: 55px 7%;
-    text-align: center;
-    gap: 35px;
-}
+    nav a:hover {
+        background-color: #faf7ff;
+    }
 
-.hero-text {
-    max-width: 100%;
-}
 
-.hero h1 {
-    font-size: 44px;
-}
+    /* HAMBURGER CHANGES INTO X */
 
-.hero-divider {
-    margin: 22px auto;
-}
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
 
-.hero-description {
-    font-size: 17px;
-}
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
 
-.hero-buttons {
-    justify-content: center;
-}
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
-.hero-image-area {
-    order: 2;
-}
 
-.hero-feature-image {
-    max-width: 520px;
-}
+    /* =========================
+       HOMEPAGE HERO
+    ========================= */
 
-.hero-tagline {
-    font-size: 21px;
-}
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 7%;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-divider {
+        margin: 22px auto;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image-area {
+        order: 2;
+    }
+
+    .hero-feature-image {
+        max-width: 520px;
+    }
+
+    .hero-tagline {
+        font-size: 21px;
+    }
+
+
+    /* =========================
+       MAIN BOOKS PAGE
+    ========================= */
 
     .book-grid {
         grid-template-columns: 1fr;
@@ -644,228 +708,66 @@ footer {
     .book-cover {
         height: 300px;
     }
-.mission-section {
+
+
+    /* =========================
+       ABOUT PAGE
+    ========================= */
+
+    .mission-section {
         grid-template-columns: 1fr;
     }
-    /* RESOURCES PAGE ON PHONES */
-.resource-grid {
+
+
+    /* =========================
+       RESOURCES PAGE
+    ========================= */
+
+    .resource-grid {
         grid-template-columns: 1fr;
     }
 
     .resource-message h2 {
         font-size: 34px;
     }
+
+
+    /* =========================
+       CONTACT PAGE
+    ========================= */
+
     .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-}
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
 
-.contact-form-wrapper {
-    padding: 25px;
-}
-    /* CONTACT PAGE */
+    .contact-form-wrapper {
+        padding: 25px;
+    }
 
-.contact-page {
-    padding: 80px 8%;
-    background-color: white;
-}
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1200px;
-    margin: auto;
-}
+    /* =========================
+       ISABELA'S WORLD SERIES
+    ========================= */
 
-.contact-info h2 {
-    font-size: 38px;
-    color: #195d8a;
-    margin-top: 10px;
-}
+    .series-grid,
+    .spanish-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
 
-.contact-info > p {
-    font-size: 18px;
-    line-height: 1.8;
-}
+    .series-cover {
+        height: 320px;
+    }
 
-.contact-item {
-    margin-top: 30px;
-}
 
-.contact-item h3 {
-    color: #195d8a;
-    margin-bottom: 8px;
-}
+    /* =========================
+       I CAN READ SERIES
+    ========================= */
 
-.contact-item p {
-    line-height: 1.7;
-}
+    .reading-series-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
 
-.contact-form-wrapper {
-    background-color: #faf7ff;
-    padding: 35px;
-    border-radius: 16px;
-    border: 1px solid #dcebf5;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #233142;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 20px;
-    border: 1px solid #cddce7;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 2px solid #2776a8;
-    border-color: #2776a8;
-}
-
-.contact-form .button {
-    border: none;
-    cursor: pointer;
-    align-self: flex-start;
-}
-/* HOMEPAGE HERO ON PHONES */
-
-.hero {
-    grid-template-columns: 1fr;
-    padding: 55px 7%;
-    text-align: center;
-    gap: 35px;
-}
-
-.hero-text {
-    max-width: 100%;
-}
-
-.hero h1 {
-    font-size: 44px;
-}
-
-.hero-divider {
-    margin: 22px auto;
-}
-
-.hero-description {
-    font-size: 17px;
-}
-
-.hero-buttons {
-    justify-content: center;
-}
-
-.hero-image-area {
-    order: 2;
-}
-
-.hero-feature-image {
-    max-width: 520px;
-}
-
-.hero-tagline {
-    font-size: 21px;
-}
-header {
-    padding: 14px 5%;
-}
-
-.logo-image {
-    width: 160px;
-}
-
-nav {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px 18px;
-    margin-top: 15px;
-}
-
-nav a {
-    font-size: 14px;
-}
-/* MOBILE NAVIGATION */
-
-header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.menu-toggle {
-    display: block;
-}
-
-nav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin-top: 15px;
-    padding: 12px 0;
-    background-color: white;
-    border-top: 1px solid #eadffd;
-}
-
-nav.nav-open {
-    display: flex;
-}
-
-nav a {
-    width: 100%;
-    text-align: center;
-    padding: 13px 0;
-    font-size: 16px;
-}
-
-nav a:hover {
-    background-color: #faf7ff;
-}
-
-/* HAMBURGER CHANGES INTO X */
-
-.menu-toggle.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-.series-grid,
-.spanish-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 700px;
-}
-
-.series-cover {
-    height: 320px;
-}
-} 
