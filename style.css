@@ -540,6 +540,67 @@ footer {
     border-radius: 3px;
     transition: 0.3s ease;
 }
+/* ISABELA'S WORLD SERIES */
+
+.series-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.series-card {
+    background-color: #faf7ff;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #eadffd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.series-cover {
+    width: 100%;
+    max-width: 260px;
+    height: 340px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+}
+
+.series-card h3 {
+    color: #7653b7;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.series-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.spanish-section {
+    background-color: #faf7ff;
+}
+
+.spanish-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+}
 @media (max-width: 768px) {
 
     header {
@@ -814,5 +875,13 @@ nav a:hover {
 
 .menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+.series-grid,
+.spanish-grid {
+    grid-template-columns: 1fr;
+}
+
+.series-cover {
+    height: 320px;
 }
 } 
