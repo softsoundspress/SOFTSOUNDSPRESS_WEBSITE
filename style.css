@@ -588,6 +588,54 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     max-width: 750px;
 }
+/* SINGLE BOOK PAGE */
+
+.single-book-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.single-book-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.single-book-image {
+    text-align: center;
+}
+
+.single-book-cover {
+    width: 100%;
+    max-width: 320px;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.single-book-content h2 {
+    color: #7653b7;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.single-book-content h3 {
+    color: #263451;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.single-book-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
 @media (max-width: 768px) {
 
     /* =========================
@@ -769,5 +817,16 @@ footer {
         grid-template-columns: 1fr;
         max-width: 100%;
     }
+.single-book-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
 
+.single-book-cover {
+    height: 340px;
+}
+
+.single-book-content {
+    text-align: center;
+}
 }
