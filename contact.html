@@ -55,22 +55,24 @@
 
 <!-- CONTACT PAGE HERO -->
 
-<section class="page-hero">
+<section class="contact-hero reveal">
 
-    <div class="page-hero-content">
+    <div class="contact-hero-content">
 
         <p class="hero-label">
             GET IN TOUCH
         </p>
 
         <h1>
-            We’d Love to Hear From You
+            Let’s Connect
         </h1>
 
+        <div class="contact-hero-line"></div>
+
         <p>
-            Have a question about our books, resources, partnerships,
-            or upcoming projects? Send us a message and we’ll be glad
-            to connect with you.
+            Whether you're a parent, educator, organization,
+            or simply interested in what we're creating,
+            we'd love to hear from you.
         </p>
 
     </div>
@@ -87,73 +89,97 @@
 
         <!-- LEFT SIDE -->
 
-        <div class="contact-info">
 
-            <p class="hero-label">
-                CONNECT WITH SOFTSOUNDSPRESS
-            </p>
+            <div class="contact-info reveal">
 
-            <h2>
-                Let’s Connect
-            </h2>
+    <p class="hero-label">
+        CONNECT WITH SOFTSOUNDSPRESS
+    </p>
+
+    <h2>
+        How Can We Help?
+    </h2>
+
+    <p class="contact-intro">
+        Choose the area that best matches your question or interest.
+        You can then send us a message using the contact form.
+    </p>
+
+
+    <div class="contact-option-grid">
+
+
+        <div class="contact-option-card reveal">
+
+            <h3>
+                Books & Resources
+            </h3>
 
             <p>
-                SoftSoundsPress welcomes messages from parents,
-                caregivers, educators, support professionals,
-                community organizations, and readers.
+                Questions about our books, printables,
+                or educational resources?
             </p>
 
-
-            <div class="contact-item">
-
-                <h3>
-                    Books & Resources
-                </h3>
-
-                <p>
-                    Have a question about one of our books,
-                    printable resources, or upcoming materials?
-                    We’d be happy to help.
-                </p>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <h3>
-                    Schools & Organizations
-                </h3>
-
-                <p>
-                    We welcome opportunities to connect with schools,
-                    educators, therapists, community organizations,
-                    and programs supporting children and families.
-                </p>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <h3>
-                    Partnerships & Collaboration
-                </h3>
-
-                <p>
-                    Interested in collaborating with SoftSoundsPress
-                    or discussing a community, educational, or
-                    family-support project? Reach out through the form.
-                </p>
-
-            </div>
+            <button
+                class="support-link"
+                data-modal="contactBooksModal"
+            >
+                Learn More →
+            </button>
 
         </div>
 
 
+        <div class="contact-option-card reveal">
+
+            <h3>
+                Schools & Organizations
+            </h3>
+
+            <p>
+                Interested in using our materials
+                or connecting through your organization?
+            </p>
+
+            <button
+                class="support-link"
+                data-modal="contactSchoolsModal"
+            >
+                Learn More →
+            </button>
+
+        </div>
+
+
+        <div class="contact-option-card reveal">
+
+            <h3>
+                Partnerships
+            </h3>
+
+            <p>
+                Interested in collaboration,
+                outreach, or community partnerships?
+            </p>
+
+            <button
+                class="support-link"
+                data-modal="contactPartnersModal"
+            >
+                Learn More →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
         <!-- RIGHT SIDE / FORM -->
 
-        <div class="contact-form-wrapper">
+        <div class="contact-form-section reveal">
 
             <p class="hero-label">
                 SEND A MESSAGE
@@ -272,6 +298,105 @@
     </p>
 
 </footer>
+
+<!-- CONTACT BOOKS MODAL -->
+
+<div class="info-modal" id="contactBooksModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            BOOKS & RESOURCES
+        </p>
+
+        <h2>
+            Questions About Our Materials?
+        </h2>
+
+        <p>
+            Contact us with questions about SoftSoundsPress books,
+            printable tools, early-reading materials,
+            sensory resources, or upcoming publications.
+        </p>
+
+        <a href="books.html" class="button">
+            Explore Our Books
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- CONTACT SCHOOLS MODAL -->
+
+<div class="info-modal" id="contactSchoolsModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            SCHOOLS & ORGANIZATIONS
+        </p>
+
+        <h2>
+            Supporting Children Together
+        </h2>
+
+        <p>
+            We welcome connections with schools, educators,
+            therapists, community organizations, and programs
+            interested in resources that support children and families.
+        </p>
+
+        <a href="resources.html" class="button">
+            Explore Resources
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- CONTACT PARTNERS MODAL -->
+
+<div class="info-modal" id="contactPartnersModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            PARTNERSHIPS & COLLABORATION
+        </p>
+
+        <h2>
+            Let's Create Meaningful Connections
+        </h2>
+
+        <p>
+            SoftSoundsPress welcomes conversations about
+            community collaboration, educational projects,
+            advocacy initiatives, and family-support opportunities.
+        </p>
+
+        <p>
+            Use the contact form on this page to tell us
+            a little about your idea.
+        </p>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
