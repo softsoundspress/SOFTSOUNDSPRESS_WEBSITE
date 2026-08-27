@@ -674,6 +674,210 @@ footer {
     flex-wrap: wrap;
     margin-top: 25px;
 }
+/* RESOURCE DETAIL PAGES */
+
+.resource-detail-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.resource-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.resource-detail-card {
+    background-color: #faf7ff;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #eadffd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.resource-detail-card h2 {
+    color: #7653b7;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.resource-detail-card p {
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.resource-example {
+    font-weight: bold;
+    color: #195d8a;
+    font-size: 18px;
+}
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-story-section,
+.about-values-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.about-story-content,
+.about-values-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-story-content h2,
+.about-values-content h2,
+.about-mission-content h2,
+.about-explore-content h2 {
+    color: #195d8a;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.about-story-content p,
+.about-values-content p,
+.about-mission-content p,
+.about-explore-content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* MISSION */
+
+.about-mission-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+    text-align: center;
+}
+
+.about-mission-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* WHO WE CREATE FOR */
+
+.about-audience-section {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.about-audience-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.about-audience-heading h2 {
+    color: #195d8a;
+    font-size: 36px;
+}
+
+.about-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-audience-card {
+    background-color: #faf7ff;
+    padding: 32px;
+    border-radius: 18px;
+    border: 1px solid #eadffd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.about-audience-card h3 {
+    color: #7653b7;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.about-audience-card p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* OUR APPROACH */
+
+.about-values-section {
+    background-color: #f8fbff;
+}
+
+
+/* EXPLORE */
+
+.about-explore-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+    text-align: center;
+}
+
+.about-explore-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-explore-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+/* CONTACT PAGE POLISH */
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    color: #195d8a;
+    font-size: 34px;
+    margin-top: 8px;
+}
+
+.contact-form-wrapper {
+    background-color: #faf7ff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #eadffd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: white;
+    border: 1px solid #d8cceb;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #9572d2;
+    box-shadow: 0 0 0 3px rgba(149, 114, 210, 0.15);
+}
+
+.contact-form .button {
+    margin-top: 5px;
+}
+
+.contact-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee6f8;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
 @media (max-width: 768px) {
 
     /* =========================
@@ -887,5 +1091,20 @@ footer {
     width: 85%;
     max-width: 320px;
     text-align: center;
+}
+.resource-detail-grid {
+    grid-template-columns: 1fr;
+}
+
+.resource-detail-card {
+    padding: 25px;
+}
+.contact-form-wrapper {
+    padding: 28px;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    font-size: 30px;
 }
 }
