@@ -45,30 +45,30 @@
 
 </header>
 
-<section class="page-hero">
+<section class="page-hero reveal">
 
     <div class="page-hero-content">
 
-        <p class="hero-label">
-            SOFTSOUNDSPRESS BOOKS
-        </p>
+       <p class="hero-label">
+    OUR COLLECTIONS
+</p>
 
-        <h1>
-            Books Created With Purpose
-        </h1>
+<h1>
+    Stories Created With Purpose
+</h1>
 
-        <p>
-            Explore books designed to support learning,
-            communication, sensory awareness, confidence,
-            and meaningful connections.
-        </p>
+<p>
+    Explore books designed to support learning,
+    communication, sensory understanding, confidence,
+    and meaningful family connection.
+</p>
 
     </div>
 
 </section>
 
 
-<section class="books">
+<section class="books reveal">
 
     <div class="section-heading">
 
@@ -87,7 +87,7 @@
 
         <!-- BOOK 1 -->
 
-        <div class="book-card">
+        <div class="book-card reveal">
 
             <img
                 src="images/isabelas-world.png"
@@ -104,8 +104,14 @@
                 sensory experiences, communication, routines,
                 emotions, and everyday life.
             </p>
+<button
+    class="support-link"
+    data-modal="isabelasQuickModal"
+>
+    Quick View
+</button>
 
-            <a href="isabelas-world.html" class="button">
+<a href="isabelas-world.html" class="button">
     View Series
 </a>
 
@@ -114,7 +120,7 @@
 
         <!-- BOOK 2 -->
 
-        <div class="book-card">
+        <div class="book-card reveal">
 
             <img
                 src="images/i-can-read.jpeg"
@@ -132,16 +138,23 @@
                 and engaging pictures to encourage learning.
             </p>
 
-          <a href="i-can-read.html" class="button">
+    <button
+    class="support-link"
+    data-modal="readingQuickModal"
+>
+    Quick View
+</button>
+
+<a href="i-can-read.html" class="button">
     View Series
-</a>  
+</a>
 
         </div>
 
 
         <!-- BOOK 3 -->
 
-        <div class="book-card">
+        <div class="book-card reveal">
 
             <img
                 src="images/autism-book.jpeg"
@@ -159,7 +172,14 @@
                 and connection.
             </p>
 
-            <a href="autism-book.html" class="button">
+    <button
+    class="support-link"
+    data-modal="autismQuickModal"
+>
+    Quick View
+</button>
+
+<a href="autism-book.html" class="button">
     View Book
 </a>
 
@@ -170,7 +190,7 @@
 </section>
 
 
-<section class="about">
+<section class="about reveal">
 
     <h2>
         More Books Are Coming
@@ -193,6 +213,115 @@
 
 </footer>
 
+<!-- ISABELA'S WORLD QUICK VIEW -->
+
+<div class="info-modal" id="isabelasQuickModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            ISABELA'S WORLD
+        </p>
+
+        <h2>
+            Stories That Help Children Feel Understood
+        </h2>
+
+        <p>
+            The Isabela's World collection explores creativity,
+            sensory experiences, trying new things, routines,
+            communication, and everyday life through stories
+            created with children and families in mind.
+        </p>
+
+        <p>
+            The collection currently includes four English titles
+            and two Spanish editions.
+        </p>
+
+        <a href="isabelas-world.html" class="button">
+            Explore the Series
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- I CAN READ QUICK VIEW -->
+
+<div class="info-modal" id="readingQuickModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            I CAN READ
+        </p>
+
+        <h2>
+            Building Confidence One Sentence at a Time
+        </h2>
+
+        <p>
+            The I Can Read series uses simple language,
+            repetition, familiar vocabulary, and visual support
+            to encourage early literacy and language development.
+        </p>
+
+        <p>
+            The collection currently includes
+            I Can Read and I Can Read More!
+        </p>
+
+        <a href="i-can-read.html" class="button">
+            Explore the Series
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- AUTISM JOURNEY QUICK VIEW -->
+
+<div class="info-modal" id="autismQuickModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" aria-label="Close">
+            ×
+        </button>
+
+        <p class="hero-label">
+            THE AUTISM JOURNEY
+        </p>
+
+        <h2>
+            A Resource for Parents & Caregivers
+        </h2>
+
+        <p>
+            The Autism Journey: A Parent's Guide to Understanding
+            and Supporting Their Children offers encouragement,
+            practical understanding, and support for families
+            navigating the autism journey.
+        </p>
+
+        <a href="autism-book.html" class="button">
+            Explore the Book
+        </a>
+
+    </div>
+
+</div>
 <script src="script.js"></script>
 
 </body>

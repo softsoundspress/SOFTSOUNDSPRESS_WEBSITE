@@ -329,6 +329,19 @@ nav a:hover::after {
     text-align: center;
     border: 1px solid #dcebf5;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.10);
 }
 
 .book-card h3 {
@@ -352,6 +365,9 @@ nav a:hover::after {
     display: block;
     margin: 0 auto 25px;
     border-radius: 10px;
+}
+.book-card .support-link {
+    margin: 8px 0 18px;
 }
 
 /* OLD PLACEHOLDER STYLE */
