@@ -1304,6 +1304,166 @@ footer {
     margin-left: 0;
     margin-right: 0;
 }
+/* ========================================
+   ISABELA'S WORLD - SERIES SUPPORT
+======================================== */
+
+.series-support-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+}
+
+.series-support-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.series-support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.series-support-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 18px;
+    border: 1px solid #eadffd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.series-support-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.series-support-card h3 {
+    color: #7653b7;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.series-support-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+/* ========================================
+   I CAN READ - SERIES SUPPORT
+======================================== */
+
+.reading-support-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+}
+
+.reading-support-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.reading-support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reading-support-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 18px;
+    border: 1px solid #dcebf5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.reading-support-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.reading-support-card h3 {
+    color: #195d8a;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.reading-support-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   THE AUTISM JOURNEY - GUIDE TOPICS
+======================================== */
+
+.autism-guide-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+}
+
+.autism-guide-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.autism-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.autism-guide-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 18px;
+    border: 1px solid #dcebf5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.autism-guide-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.autism-guide-card h3 {
+    color: #7653b7;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.autism-guide-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
 @media (max-width: 768px) {
 
     /* =========================
@@ -1587,4 +1747,48 @@ footer {
     font-size: 13px;
     padding: 9px 15px;
 }
+/* ISABELA'S WORLD SUPPORT CARDS ON PHONES */
+
+.series-support-section {
+    padding: 55px 7%;
+}
+
+.series-support-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.series-support-card {
+    padding: 26px 22px;
+}
+
+/* I CAN READ SUPPORT CARDS ON PHONES */
+
+.reading-support-section {
+    padding: 55px 7%;
+}
+
+.reading-support-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.reading-support-card {
+    padding: 26px 22px;
+}
+/* AUTISM JOURNEY GUIDE CARDS ON PHONES */
+
+.autism-guide-section {
+    padding: 55px 7%;
+}
+
+.autism-guide-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.autism-guide-card {
+    padding: 26px 22px;
+}
+
 }
