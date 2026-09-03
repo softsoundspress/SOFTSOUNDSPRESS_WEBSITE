@@ -187,14 +187,16 @@ nav a:hover::after {
     text-align: center;
 }
 
+/* HOMEPAGE MAIN HERO IMAGE */
+
 .hero-feature-image {
     width: 100%;
-    max-width: 720px;
+    max-width: none;
     height: auto;
     display: block;
-    margin: auto;
+    margin: 0;
 
-    border-radius: 30px;
+    border-radius: 0;
     object-fit: contain;
 }
 
@@ -586,11 +588,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .series-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+    transform: translateY(-7px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.10);
 }
 
 .series-cover {
