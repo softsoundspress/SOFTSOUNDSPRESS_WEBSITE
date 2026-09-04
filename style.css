@@ -1464,6 +1464,105 @@ footer {
     line-height: 1.7;
     margin-bottom: 0;
 }
+/* ========================================
+   FOLLOW SOFTSOUNDSPRESS
+======================================== */
+
+.social-follow-section {
+    padding: 80px 8%;
+    background: linear-gradient(
+        135deg,
+        #faf7ff 0%,
+        #f5f9ff 50%,
+        #fff9fc 100%
+    );
+    text-align: center;
+}
+
+.social-follow-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.social-follow-content h2 {
+    color: #195d8a;
+    font-size: 36px;
+    margin: 10px 0 15px;
+}
+
+.social-follow-intro {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4d5662;
+}
+
+
+/* SOCIAL ICON CONTAINER */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+
+/* INDIVIDUAL SOCIAL LINKS */
+
+.social-icon-link {
+    min-width: 145px;
+    padding: 18px 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    background-color: white;
+    border: 1px solid #eadffd;
+    border-radius: 18px;
+
+    color: #7653b7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* SOCIAL ICON */
+
+.social-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #f3edff;
+    color: #7653b7;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
 @media (max-width: 768px) {
 
     /* =========================
@@ -1790,5 +1889,26 @@ footer {
 .autism-guide-card {
     padding: 26px 22px;
 }
+/* FOLLOW SECTION ON PHONES */
 
+.social-follow-section {
+    padding: 55px 7%;
+}
+
+.social-follow-content h2 {
+    font-size: 30px;
+}
+
+.social-follow-intro {
+    font-size: 16px;
+}
+
+.social-icons {
+    gap: 14px;
+}
+
+.social-icon-link {
+    min-width: 120px;
+    padding: 16px 18px;
+}
 }
