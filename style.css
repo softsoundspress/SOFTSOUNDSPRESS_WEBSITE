@@ -1562,6 +1562,126 @@ footer {
     font-size: 27px;
     font-weight: 700;
 }
+/* ========================================
+   ABOUT PAGE - FAMILY LEARNING
+======================================== */
+
+.family-learning-section {
+    padding: 80px 8%;
+    background-color: #f8fbff;
+}
+
+.family-learning-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.family-learning-content h2 {
+    color: #195d8a;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.family-learning-content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.family-learning-lead {
+    font-size: 19px !important;
+    color: #4d5662;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   ABOUT PAGE - SAFE SPACE FOR FAMILIES
+======================================== */
+
+.family-space-section {
+    padding: 80px 8%;
+    background-color: #faf7ff;
+}
+
+.family-space-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.family-space-content h2 {
+    color: #195d8a;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.family-space-intro {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.family-space-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.family-space-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 18px;
+    border: 1px solid #eadffd;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.family-space-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+}
+
+.family-space-card h3 {
+    color: #7653b7;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.family-space-card p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   ABOUT PAGE - OUR PERSPECTIVE
+======================================== */
+
+.family-perspective-section {
+    padding: 80px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.family-perspective-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.family-perspective-content h2 {
+    color: #195d8a;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.family-perspective-content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
 
 @media (max-width: 768px) {
 
@@ -1910,5 +2030,27 @@ footer {
 .social-icon-link {
     min-width: 120px;
     padding: 16px 18px;
+}
+/* ABOUT FAMILY SECTIONS ON PHONES */
+
+.family-learning-section,
+.family-space-section,
+.family-perspective-section {
+    padding: 55px 7%;
+}
+
+.family-learning-content h2,
+.family-space-content h2,
+.family-perspective-content h2 {
+    font-size: 30px;
+}
+
+.family-space-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.family-space-card {
+    padding: 26px 22px;
 }
 }
