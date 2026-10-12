@@ -2195,4 +2195,83 @@ footer {
     box-sizing: border-box;
 }
 
+
+
+}
+/* ========================================
+   FAMILY RESOURCE DIRECTORY QUICK NAVIGATION
+======================================== */
+
+.family-quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.family-nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 24px;
+    background-color: #faf7ff;
+    color: #7653b7;
+    border: 1px solid #eadffd;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    transition: transform 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.family-nav-link:hover {
+    background-color: #f0e7ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Keep headings visible below the sticky header */
+
+#care-coordination,
+#family-support,
+#school-advocacy,
+#community-services,
+#additional-resources {
+    scroll-margin-top: 110px;
+}
+
+@media (max-width: 768px) {
+    .family-quick-nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 7%;
+    }
+
+    .family-nav-link {
+        width: auto;
+        padding: 16px 18px;
+    }
+}
+
+/* ========================================
+   SPECIAL EDUCATION & PARENT ADVOCACY
+======================================== */
+
+.resource-grid.advocacy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .resource-grid.advocacy-grid {
+        grid-template-columns: 1fr;
+    }
 }
