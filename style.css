@@ -2275,3 +2275,20 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* CENTER SUPPORT OUR MISSION CARDS */
+
+.resource-grid.support-options-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 768px) {
+    .resource-grid.support-options-grid {
+        grid-template-columns: 1fr;
+    }
+}
